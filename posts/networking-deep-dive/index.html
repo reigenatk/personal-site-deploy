@@ -147,7 +147,7 @@ understand. Trust me.</p><p>The first concept you need to understand is IPv4 add
 For example, 192.168.10.24. So doing the math, this leaves 2^32 = 4294967296 or about <span class="lb">4 million IP addresses</span>. Think about that for a second.</p><p>The population of the United States is 300 million. And we are quite the developed country, so assuming each person has 1 device,
 and each device has one IP address, this means that we are 4 - 300 = <em>296 million IP address short... What?This makes no sense!</em></p><p>That&#x27;s exactly where NAT comes in- <span class="lg">there&#x27;s no way every device in the planet can have its own IP address.</span> If that were so, we would&#x27;ve
 already ran out long ago. The designers of IPv4
-realized this fast. So they came up with this nifty idea.</p><p>Remember how LANs look? Computers connect to switches, then switches connect to routers. WHere&#x27;s the solution: We gave every machine on
+realized this fast. So they came up with this nifty idea.</p><p>Remember how LANs look? Computers connect to switches, then switches connect to routers. Here&#x27;s the solution: We gave every machine on
 an LAN its own unique IP address, called the <span class="lr">Private IP</span>. This way, we can differentiate</p><p>And whenever that machine wants to send traffic onto the public internet, we give it a different IP called the <span class="lb">Public IP</span>,
 which is just <strong>the IP address of the router</strong>. Furthermore- Every machine on that LAN uses the router&#x27;s IP when trying to go anywhere
 on the public internet.</p><p>This is exactly the idea of NAT. And now, <span class="lp">more than one device can share a single IP address.</span> Let me say that again, because that&#x27;s the key
